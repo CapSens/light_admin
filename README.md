@@ -22,8 +22,13 @@ Or install it yourself as:
 
 ## Usage
 
-Add '@import "capsens_theme/base";' in app/assets/stylesheets/active_admin.scss after '@import "active_admin/base"  
-Add '//= require capsens_theme/filters_toggle' in app/assets/javascripts/active_admin.js after '//= require active_admin/base'  
+Add  
+'@import "capsens_theme/base";'  
+in app/assets/stylesheets/active_admin.scss after '@import "active_admin/base".
+
+Add  
+'//= require capsens_theme/filters_toggle'  
+in app/assets/javascripts/active_admin.js after '//= require active_admin/base'  
 
 Good to go!
 
