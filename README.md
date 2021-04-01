@@ -16,10 +16,6 @@ And then execute:
 
     $ bundle install
 
-Or install it yourself as:
-
-    $ gem install active_admin_theme_capsens
-
 ## Usage
 
 Add  
