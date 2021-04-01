@@ -9,7 +9,7 @@ TODO: Delete this and the text above, and describe your gem
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'active_admin_theme_capsens'
+gem 'active_admin_theme_capsens', github: agosha-wra/activeadmin-theme-capsens
 ```
 
 And then execute:
