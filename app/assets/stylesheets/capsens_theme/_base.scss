@@ -1,0 +1,37 @@
+// Variables
+@import 'variables/colors';
+@import 'variables/font';
+@import 'variables/borders';
+@import 'variables/shadows';
+
+// Required Bootstrap
+@import 'bootstrap/scss/functions';
+@import 'bootstrap/scss/variables';
+@import 'bootstrap/scss/mixins';
+
+@import 'bootstrap/scss/images';
+@import 'bootstrap/scss/utilities';
+
+// Components
+@import 'components/toggle_filters';
+@import 'components/list';
+@import 'components/status_tag';
+@import 'components/images';
+@import 'components/buttons';
+@import 'components/header';
+@import 'components/titles';
+@import 'components/tables';
+@import 'components/panels';
+@import 'components/forms';
+@import 'components/sidebars';
+@import 'components/comments';
+@import 'components/footer'; 
+@import 'components/breadcrumbs';
+@import 'components/flash_messages';
+@import 'components/datepicker_calendar';
+
+// Global
+@import 'rules';
+
+// Views
+@import 'views/login';

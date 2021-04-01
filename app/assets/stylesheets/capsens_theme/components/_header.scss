@@ -1,0 +1,131 @@
+#header.header {
+  background: linear-gradient(to left, $primary, $secondary);
+  border-bottom: none;
+  box-shadow: none;
+  text-shadow: none;
+  position: unset;
+  height: 230px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: unset;
+  flex-wrap: nowrap;
+  padding: 10px 0;
+  z-index: unset;
+  backdrop-filter: unset;
+
+  h1 {
+    img {
+      top: 0;
+    }
+  }
+
+  .border-bottom-white-50 {
+    border-bottom: .5px solid $white-20;
+  }
+
+  #tabs {
+    width: unset;
+    margin-top: 20px;
+  }
+
+  ul.tabs {
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  /* Header's links dropdown style */
+  .header-item {
+    a {
+      color: $text-dark;
+      border-radius: 0;
+
+      &:hover {
+        background: none;
+        color: $text-info;
+      }
+    }
+
+    ul {
+      background: $bg-white;
+      margin-top: 10px;
+      border-radius : 4px;
+      padding: .25rem 0;
+      border: $border-style;
+      box-shadow: $dropdown-shadow;
+      right: 0;
+    }
+  }
+
+  ul.tabs > li.has_nested > a {
+    background: none;
+  }
+
+  ul.tabs > li.has_nested > a:before {
+    background: none;
+    border: 3px solid transparent;
+    border-right: 0;
+    border-left-color: $white;
+    content: '';
+    position: absolute;
+    top: 45%;
+    transform: rotate(90deg);
+    right: 10px;
+  }
+
+  .header-item > li.has_nested:hover > a:before {
+    color: $text-info;
+    border-left-color: $info;
+  }
+
+  .header-item > li.has_nested.current > a:before {
+    border-left-color: $white;
+  }
+
+  .header-item > li {
+    margin: 0 30px 20px 0;
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+
+  .header-item > li > a {
+    padding: 10px 0;
+    margin: 0;
+    color: $header-item-li-color;
+    font-weight: 500;
+  }
+
+  .site_title {
+    color: $text-white;
+    padding: 0;
+  }
+
+  .tabs {
+    margin: 0;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  ul.tabs > li.current > a {
+    background: none;
+    border-radius: 0;
+    border-bottom: 1px $white solid;
+  }
+
+  ul.tabs > li:hover > a {
+    background: none;
+    color: $text-info;
+    border-radius: 0;
+    border-bottom: 1px $info solid;
+  }
+
+  #utility_nav {
+    width: unset;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    padding-right: 0;
+  }
+}

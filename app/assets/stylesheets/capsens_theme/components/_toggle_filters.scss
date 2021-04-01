@@ -1,0 +1,20 @@
+a#toggleFilters {
+
+  &.epon, &.epon:hover {
+    font-weight: 800;
+    -moz-box-shadow:    inset 0.5px 0.25px 1.25px #000000;
+    -webkit-box-shadow: inset 0.5px 0.25px 1.25px #000000;
+    box-shadow:         inset 0.5px 0.25px 1.25px #000000;
+  }
+}
+
+#toggleFilters {
+  display: inline-block;
+  margin-left: auto;
+  background-color: $bg-buttons;
+  color: $text-white;
+  border-radius: $border-radius-btn;
+  padding: .5rem 1rem;
+  text-decoration: none;
+  font-weight: 500;
+}

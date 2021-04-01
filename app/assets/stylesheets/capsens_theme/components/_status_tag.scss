@@ -1,0 +1,12 @@
+$publish_states_colors: (
+  yes: $success, 
+  no: $danger
+);
+
+.status_tag {
+  @each $state, $color in $publish_states_colors {
+    &.#{$state} {
+      background: $color;
+    }
+  }
+}

@@ -1,0 +1,32 @@
+/* COLORS LIST */
+$black: #000000;
+$white: #FFFFFF;
+$white-20: rgba($white, .2);
+$gray: #4B5563;
+$light-gray: #D9D7DD;
+$charcoal: #374151;
+$primary: #0c81e4;
+$secondary: #0c4e8c;
+$info: #11c4d4;
+$light: #F3F4F6;
+$dark: #526469;
+$success: #66bb6a;
+$danger: #bb4678;
+
+/* BACKGROUNDS COLOR */
+$bg-white: $white;
+$bg-buttons: $charcoal;
+$bg-light: $light;
+$bg-danger: $danger;
+
+/* FONTS COLOR */
+$global-text-color: $gray;
+$text-white: $white;
+$header-item-li-color: rgba($white, 0.8);
+$text-info: $info;
+$text-dark: $dark;
+$text-success: $success;
+$text-danger: $danger;
+$title-login: $black;
+$text-buttons: $charcoal;
+$attributes-table-th-text-color: rgba($gray, .7);

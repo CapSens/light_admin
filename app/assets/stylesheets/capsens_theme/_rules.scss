@@ -1,0 +1,43 @@
+body {
+  font-family: $font-family;
+  font-size: $font-size;
+  color: $global-text-color;
+  background-color: $bg-light;
+
+  #active_admin_content {
+    padding: 0 15px;
+  }
+
+  #active_admin_content #main_content_wrapper #main_content {
+    margin-top: 30px;
+    width: calc(100vw - 30px);
+
+    .paginated_collection {
+      background: $bg-white;
+      border-radius: $global-border-radius;
+      overflow: auto;
+    }
+  }
+
+  #content_wrapper #active_admin_content {
+    border-radius: $global-border-radius;
+    border: none;
+    box-shadow: none;
+    background: none;
+  }
+
+  #collection_selection {
+    overflow-x: inherit;
+    background: $bg-white;
+    box-shadow: $global-shadow;
+    border-radius: $global-border-radius;
+  }
+
+  #index_footer {
+    padding: 24px;
+    margin: 0;
+    background: $bg-white;
+    border-top: $border-style-light;
+    border-radius: $global-border-radius-bottom;
+  }
+}

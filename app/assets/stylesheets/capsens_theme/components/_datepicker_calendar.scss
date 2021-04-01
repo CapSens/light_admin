@@ -1,0 +1,29 @@
+.ui-datepicker {
+  box-shadow: $dropdown-shadow;
+  left: 1192px !important;
+}
+
+.ui-datepicker-calendar {
+  background: $bg-white;
+  border: $border-style-light;
+  border-top: none;
+  border-radius: 0 0 4px 4px;
+  color: $gray;
+}
+
+.ui-datepicker-header {
+  background: $global-text-color;
+  border-bottom: none;
+  border-radius: 4px 4px 0 0;
+}
+
+.ui-datepicker-calendar .ui-state-highlight {
+  color: $text-info;
+  font-weight: bold;
+  background: $light-gray;
+  padding: 1px 4px;
+}
+
+.ui-datepicker-calendar .ui-state-active {
+  color: $text-info;
+}

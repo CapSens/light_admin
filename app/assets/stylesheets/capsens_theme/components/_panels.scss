@@ -1,0 +1,140 @@
+/* GLOBAL PANELS */
+.panel > h3 {
+  background: none;
+  color: $global-text-color;
+  border: none;
+  border-bottom: $border-style-light;
+  border-radius: 0;
+  box-shadow: none;
+  text-shadow: none;
+  font-size: 1.1rem;
+  font-family: $font-family;
+  padding: 1.25rem 1rem;
+  margin: 0;
+}
+
+.panel > div {
+  padding: 0;
+  overflow: auto;
+}
+
+.panel {
+  background: $bg-white;
+  box-shadow: $global-shadow;
+  border: none;
+  border-radius: $global-border-radius;
+  margin: 25px 0;
+
+  h3 {
+    &:empty {
+      padding: 0;
+    }
+  }
+}
+
+.panel_contents {
+  table {
+    margin: 0;
+    border-radius: $global-border-radius;
+
+    tr.even {
+      td {
+        background: none;
+      }
+    }
+
+    tr.odd {
+      td {
+        background: none;
+      }
+    }
+  }
+
+  th {
+    text-transform: uppercase;
+    text-shadow: none !important;
+  }
+
+  th, td {
+    padding: 1rem 1.5rem;
+    border-bottom: $border-style-light !important;
+  }
+
+  tr + tr th,
+  tr + tr td {
+    border-top: none;
+    border-bottom: $border-style-light;
+  }
+}
+
+/*PANEL WITH LINK*/
+.panel_with_link {
+  margin-top: 25px;
+  box-shadow: $global-shadow;
+  border-radius: $global-border-radius;
+  background: $bg-white;
+
+  .title-panel-wrap {
+    border-bottom: $border-style-light;
+
+    h3 {
+      font-size: 1.1rem;
+      font-weight: bold;
+      font-family: $font-family;
+      padding: 1.25rem 1rem;
+      margin: 0px;
+    }
+
+    a {
+      padding-right: 1.25rem;
+      color: $primary;
+    }
+
+    a:hover {
+      color: $text-info;
+    }
+  }
+
+  thead th {
+    background: none;
+    border-bottom: $border-style-light;
+  }
+
+  table {
+    border-radius: $global-border-radius;
+
+    tr th {
+      padding: 1.25rem 1rem;
+      text-align: left;
+      text-transform: uppercase;
+    }
+
+    tbody td {
+      a {
+        color: $primary;
+      }
+    }
+
+    tbody tr {
+      transition: .3s ease;
+
+      &:hover {
+        background: $light;
+      }
+    }
+
+    tbody tr td {
+      padding: 1.25rem 1rem;
+      border-bottom: $border-style-light;
+    }
+
+    tbody tr:last-child td {
+      border: unset;
+    }
+  }
+}
+
+#filters_sidebar_section {
+  margin-top: 30px;
+  border-radius: $global-border-radius;
+}

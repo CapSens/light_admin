@@ -1,0 +1,66 @@
+.comments {
+  .active_admin_comment {
+    .active_admin_comment_meta {
+      background: none;
+      width: unset;
+      float: unset;
+      border: none;
+    }
+  }
+
+  .pagination_information {
+    float: unset;
+    min-width: 100%;
+    color: $global-text-color;
+    font-weight: bold;
+    font-size: .9rem;
+    padding: 0 15px;
+  }
+
+  form.active_admin_comment {
+    margin-left: 0;
+
+    .inputs {
+      box-shadow: none;
+    }
+
+    textarea {
+      max-width: 100%;
+    }
+
+    input[type=submit] {
+      margin-bottom: 24px;
+    }
+  }
+}
+
+div.active_admin_comment {
+  background: none;
+  border: none;
+  border-bottom: $border-style-light;
+  border-radius: none;
+  box-shadow: none;
+}
+
+.active_admin_comment_meta {
+  padding: 30px 15px;
+
+  a[data-method='delete'] {
+    background: $bg-white;
+    border: .5px solid $danger;
+    border-radius: $border-radius-btn;
+    color: $danger;
+    font-size: 90%;
+    margin-left: 0;
+  
+    &:hover {
+      background: $danger;
+      border: .5px solid $white;
+      color: $text-white;
+    }
+  }
+}
+
+.active_admin_comment_body {
+  padding: 30px 15px;
+}

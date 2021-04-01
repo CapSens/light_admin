@@ -1,0 +1,14 @@
+/* BORDER RADIUS */
+$global-border-radius: 10px;
+$border-radius-btn: .375rem;
+$border-radius-left: .375rem 0 0 .375rem;
+$border-radius-right: 0 .375rem .375rem 0;
+$global-border-radius-top: 10px 10px 0 0;
+$global-border-radius-bottom: 0 0 10px 10px;
+$border-radius-scope: 0.375rem;
+$border-radius-thumbnail: 50%;
+
+/* BORDER STYLE */
+$border-style: .5px solid $light-gray;
+$border-style-light: .5px solid $light;
+$border-style-buttons: 0.5px solid rgba($charcoal, .3);

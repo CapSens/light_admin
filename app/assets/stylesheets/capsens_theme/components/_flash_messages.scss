@@ -1,0 +1,23 @@
+body.logged_in .flash.flash_notice {
+  background: rgba($success, .3);
+  color: $text-success;
+  font-weight: bold;
+  text-shadow: none;
+  margin: auto;
+  margin-top: 20px;
+  width: 93%;
+  border-radius: $global-border-radius;
+  border: none;
+}
+
+body.logged_in .flash.flash_error {
+  background: rgba($danger, .3);
+  color: $text-danger;
+  font-weight: bold;
+  text-shadow: none;
+  margin: auto;
+  margin-top: 20px;
+  width: 93%;
+  border-radius: $global-border-radius;
+  border: none;
+}

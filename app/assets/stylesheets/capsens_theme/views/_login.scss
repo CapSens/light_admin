@@ -1,0 +1,106 @@
+/* LOGIN TITLE */
+#login h2 {
+  background: none;
+  border-bottom: none;
+  text-shadow: none;
+  box-shadow: none;
+  font-family: $font-family;
+  font-size: 1.875rem;
+  font-weight: bold;
+  text-align: center;
+  color: $title-login;
+  padding: 0;
+  margin-top: 1.5rem;
+}
+
+/* LOGIN FORM */
+#login {
+  margin-top: 2rem;
+
+  form {
+    ol {
+      margin: 0;
+    }
+
+    fieldset.actions {
+      ol {
+        margin-top: 3rem;
+
+        li {
+          margin-right: 0;
+          width: 100%;
+
+          input {
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    input[type=submit] {
+      background: $secondary;
+      font-size: 100%;
+      border: none;
+      box-shadow: $buttons-shadow;
+      padding: 1rem 2rem;
+    }
+
+    input[type=submit]:not(.disabled):hover {
+      background: $info;
+      color: $text-white;
+      border: none;
+    }
+
+    input[type='checkbox'] {
+      margin-right: 5px;
+    }
+  }
+
+  form ol > li {
+    border-bottom: none;
+    padding: 0;
+    margin-top: 1.5rem;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  form fieldset.inputs {
+    padding: 2.5rem;
+  }
+}
+
+body.logged_out {
+  #login {
+    a {
+      margin-top: 10px;
+      margin-right: 0;
+    }
+
+    form {
+      fieldset {
+        input[type=email],
+        input[type=password] {
+          width: calc(100% - 24px);
+        }
+      }
+    }
+  }
+
+  .actions {
+    float: unset;
+    margin-left: 0;
+  }
+
+  .flash {
+    box-shadow: $global-shadow;
+    text-shadow: none;
+    background: rgba($primary, .2);
+    border: 1px solid $primary;
+    color: $primary;
+    padding: 24px;
+    margin-bottom: 24px;
+    border-radius: $global-border-radius;
+  }
+}

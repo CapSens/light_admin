@@ -1,0 +1,144 @@
+/* GLOBAL TABLES */
+.table_tools {
+  background: $bg-white;
+  margin-bottom: 0;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: $global-border-radius-top;
+  border-bottom: $border-style-light;
+  box-shadow: none;
+}
+
+table {
+  background: $bg-white;
+  margin-bottom: 0;
+}
+
+/* INDEX TABLES */
+.index_content {
+  table {
+    tr {
+      background: none;
+      transition: .3s ease;
+
+      &:hover {
+        background: $bg-light;
+      }
+    }
+  }
+}
+
+table.index_table {
+  border: none;
+  border-radius: $global-border-radius;
+  padding: 30px;
+  box-shadow: none;
+
+  thead {
+    th {
+      background: none;
+      border: none;
+      border-bottom: $border-style-light;
+      box-shadow: none;
+      vertical-align: unset;
+      text-transform: uppercase;
+
+      &:first-child {
+        border-radius: unset;
+      }
+
+      &:last-child {
+        border-radius: unset;
+      }
+    }
+
+    th.sorted-desc {
+      background: none;
+    }
+  }
+
+  th {
+    text-shadow: none;
+    height: 3rem;
+
+    &:last-child {
+      border: none;
+      border-bottom: $border-style-light;
+    }
+  }
+
+  th.sorted-asc, th.sorted-desc {
+    background: $bg-white;
+    text-transform: uppercase;
+  }
+
+  tr.even {
+    td {
+      background: unset;
+    }
+  }
+
+  td {
+    border: none;
+    border-bottom: $border-style-light;
+    padding: 20px 15px;
+  }
+
+  tbody {
+    tr:nth-child(even) {
+      td {
+        background: none;
+      }
+    }
+
+    tr.selected {
+      td {
+        background: $light-gray;
+      }
+    }
+  }
+}
+
+.tabs {
+  margin: 0;
+}
+
+/* ATTRIBUTES TABLES */
+.attributes_table {
+  border-radius: $global-border-radius;
+  box-shadow: $global-shadow;
+  overflow: scroll;
+
+  table {
+    tr {
+      transition: .3s;
+
+      &:hover {
+        background: $bg-light;
+      }
+    }
+
+    th, td {
+      border-bottom: $border-style-light;
+      padding: 1.25rem 1rem;
+    }
+  }
+
+  th {
+    text-transform: uppercase;
+    min-width: 250px;
+    color: $attributes-table-th-text-color;
+  }
+
+  tr + tr th,
+  tr + tr td {
+    border-top: none;
+    border-bottom: $border-style-light;
+  }
+
+  th, td {
+    padding: 1rem 1.5rem;
+    border-bottom: $border-style-light;
+  }
+}

@@ -1,0 +1,357 @@
+/* BUTTONS IN THE TITLE BAR */
+#title_bar {
+  .action_items {
+    span.action_item > a {
+      background: $bg-white;
+      border: $border-style-buttons;
+      border-radius: $border-radius-btn;
+      padding: .5rem 1rem;
+      box-shadow: $buttons-shadow;
+      text-shadow: none;
+      color: $text-buttons;
+      text-transform: none;
+      font-weight: 500;
+      font-family: $font-family;
+      margin-right: 15px;
+      transition: all .3s ease;
+
+      &:not(.disabled):hover {
+        background: $bg-light;
+        border: $border-style-buttons;
+        color: $text-buttons;
+        transform: translateY(-2px);
+        box-shadow: $buttons-shadow;
+      }
+    }
+  }
+}
+
+/* SCOPE BUTTONS GROUP & DROPDOWN MENU BUTTON */
+.table_tools {
+  .scope-default-group {
+    margin: 0;
+    padding: 0;
+  }
+
+  .scopes {
+    border: $border-style;
+    border-radius: $border-radius-scope;
+    box-shadow: $buttons-shadow;
+    margin-left: 3rem;
+
+    li:first-child {
+      a {
+        margin-left: 0;
+      }
+    }
+  }
+
+  .table_tools_segmented_control {
+    li:last-child {
+      a {
+        border-right-width: 0;
+        border-radius: 0;
+      }
+    }
+  }
+
+  .scope {
+    a {
+      background: none;
+      box-shadow: none;
+      border-radius: unset;
+      border-right: $border-style;
+      padding: .74rem;
+      color: $text-buttons;
+      font-weight: normal;
+      font-family: $font-family;
+
+      &:hover {
+        background: none;
+        color: $text-info;
+      }
+    }
+  }
+
+  .scope.selected a {
+    background: none;
+    color: $text-info;
+    border-bottom: 1px solid $info;
+    border-radius: 0;
+    box-shadow: none;
+    font-family: $font-family;
+  }
+
+  .dropdown_menu_button:focus:not(.disabled),
+  .dropdown_menu_button:hover:not(.disabled) {
+    background: $bg-buttons;
+    box-shadow: none;
+  }
+
+}
+
+/* GROUPED ACTIONS BUTTON */
+a.table_tools_button, .table_tools .dropdown_menu_button {
+  box-shadow: none;
+  text-shadow: none;
+  border: none;
+  border-radius: $border-radius-btn;
+  color: $text-white;
+  font-size: $font-size;
+  font-weight: 500;
+  background: $bg-buttons;
+  padding: .5rem 1rem;
+}
+
+.table_tools_segmented_control li.selected a {
+  color: $text-buttons;
+}
+
+.dropdown_menu {
+  .dropdown_menu_button {
+    &:not(.disabled) {
+      &:hover {
+        background: $secondary;
+      }
+    }
+  }
+
+  .dropdown_menu_list_wrapper {
+    font-size: $font-family;
+    position: absolute;
+    background: $white;
+    background-image: none;
+    box-shadow: none;
+    background-image: none;
+    border: none;
+    border-top-color: unset;
+    border-bottom-color: unset;
+
+    .dropdown_menu_list {
+      border: $border-style-buttons;
+      box-shadow: $dropdown-shadow;
+
+      li {
+        a {
+          color: $global-text-color;
+
+          &:hover {
+            background: $white;
+            text-shadow: none;
+            color: $info;
+          }
+        }
+      }
+    }
+  }
+
+  .dropdown_menu_nipple {
+    display: none;
+  }
+}
+
+/* NAVIGATION TABS */
+.tabs {
+  .ui-tabs-nav {
+    margin: 0;
+    display: flex;
+
+    li {
+      background: unset;
+      float: unset;
+      text-align: center;
+
+      a {
+        background: none;
+        font-family: $font-family;
+        color: $text-buttons;
+        font-weight: 500;
+        text-shadow: none;
+        border: none;
+        border-radius: none;
+        box-shadow: none;
+        padding: 0;
+
+        &:focus {
+          outline: none;
+          color: $text-info;
+          background: $bg-white;
+        }
+
+        &:hover {
+          background: none;
+          color: $text-info;
+        }
+      }
+    }
+
+    li.ui-tabs-active {
+      a {
+        background: $bg-white;
+        color: $text-buttons;
+        font-weight: 500;
+        cursor: pointer;
+        box-shadow: none;
+      }
+    }
+  }
+
+  .nav-tabs {
+    background: none;
+    box-shadow: none;
+    border: none;
+    border-radius: none;
+    padding: 0;
+    justify-content: center;
+    margin: 25px 0 25px 0;
+    list-style: none;
+
+    li {
+      padding: 1rem;
+
+      &:first-child {
+        background: $bg-white;
+        border: $border-style-buttons;
+        box-shadow: $buttons-shadow;
+        border-radius: $border-radius-left;
+      }
+    }
+
+    li:not(:first-of-type):not(.ui-tabs-active) {
+      background: $bg-white;
+      box-shadow: $buttons-shadow;
+      border-left: none;
+      border-top: $border-style-buttons;
+      border-right: $border-style-buttons;
+      border-bottom: $border-style-buttons;
+
+      &:last-child {
+        border-radius: $border-radius-right;
+      }
+    }
+
+    li.ui-tabs-active {
+      background: $bg-white;
+      padding: 1rem;
+      margin-bottom: 0;
+      border-bottom: 2px solid $info;
+      border-top: $border-style-buttons;
+      border-right: $border-style-buttons;
+      border-radius: unset;
+      box-shadow: $buttons-shadow;
+
+      &:first-child {
+        border-radius: $border-radius-left;
+        border-left: $border-style-buttons;
+        border-bottom: 2px solid $info;
+      }
+
+      &:last-child {
+        border-radius: $border-radius-right;
+      }
+    }
+  }
+}
+
+.tab-content {
+  border: none;
+  padding: 0;
+}
+
+/* FORMS BUTTONS */
+form input[type=submit],
+form input[type=button],
+form button {
+  background: $bg-buttons;
+  color: $text-white;
+  font-family: $font-family;
+  font-weight: 500;
+  font-size: 80%;
+  text-shadow: none;
+  box-shadow: none;
+  border: .5px solid $white;
+  border-radius: $border-radius-btn;
+
+  &:not(.disabled):hover {
+    background: $bg-white;
+    color: $text-buttons;
+    border: $border-style-buttons;
+  }
+}
+
+form {
+  fieldset.actions {
+    li {
+      border: none;
+    }
+
+    li.cancel {
+      a {
+        background: $bg-danger;
+        color: $text-white;
+        font-family: $font-family;
+        font-weight: 500;
+        font-size: 80%;
+        text-shadow: none;
+        box-shadow: none;
+        border: .5px solid $white;
+        border-radius: $border-radius-btn;
+
+        &:not(.disabled):hover {
+          background: $bg-white;
+          color: $text-danger;
+          border: .5px solid $danger;
+        }
+      }
+    }
+  }
+
+  .buttons {
+    display: flex;
+  }
+}
+
+/* CLEAR FILTER BUTTON */
+form.filter_form {
+  .buttons {
+    border-top: $border-style-light;
+    padding: 24px 14px;
+    margin: auto;
+    margin-top: 24px;
+    width: 90%;
+
+    a.clear_filters_btn {
+      background: $bg-danger;
+      color: $text-white;
+      font-family: $font-family;
+      font-weight: 500;
+      font-size: 80%;
+      text-shadow: none;
+      box-shadow: none;
+      border: .5px solid $white;
+      border-radius: $border-radius-btn;
+      margin-left: auto;
+
+      &:not(.disabled):hover {
+        background: $bg-white;
+        color: $text-danger;
+        border: .5px solid $danger;
+      }
+    }
+  }
+}
+
+/* BUTTONS FOR ADD AND ERASED DOCUMENTS */
+
+a.button, a:link.button {
+  background: $bg-white;
+  border: $border-style-buttons;
+  border-radius: $border-radius-btn;
+  box-shadow: $buttons-shadow;
+  font-size: $font-size;
+  font-weight: 500;
+
+  &:hover {
+    background: $bg-light;
+  }
+}

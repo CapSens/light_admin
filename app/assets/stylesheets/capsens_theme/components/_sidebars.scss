@@ -1,0 +1,49 @@
+.sidebar_section {
+  h3 {
+    margin: 0 0 24px 0;
+  }
+
+  label {
+    margin-bottom: 5px;
+  }
+}
+
+/* FILTER STATUS LIST STYLE */
+#search_status_sidebar_section {
+  margin-top: 30px;
+
+  div {
+    padding: 0 24px 0 24px;
+    margin-top: 0 !important;
+  }
+}
+
+#active_admin_content {
+  #sidebar {
+    max-width: 264px;
+    margin-left: -265px;
+    
+    .panel_contents {
+      h4 {
+        font-family: $font-family;
+        font-size: .9rem;
+        font-weight: bold;
+        margin: 0 !important;
+        padding: 1rem 0;
+      }
+      ul {
+        padding: 0;
+        list-style: none;
+
+        li {
+          padding: 1rem 0;
+          border-bottom: $border-style-light;
+
+          &:last-child {
+            border-bottom: none;
+          }
+        }
+      }
+    }
+  }
+}

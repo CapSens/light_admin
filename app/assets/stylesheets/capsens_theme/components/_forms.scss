@@ -1,0 +1,207 @@
+/* GLOBAL FORMS */
+form {
+  fieldset {
+    legend {
+      span {
+        &:empty {
+          display: none;
+        }
+      }
+    }
+
+    ol > li.boolean label {
+      padding-left: 0;
+    }
+  }
+  fieldset.inputs {
+    background: $bg-white;
+    margin: 1.5rem 0;
+    padding: 10px;
+    border-radius: $global-border-radius;
+    border: none;
+    box-shadow: $global-shadow;
+  }
+
+  fieldset.actions {
+    ol {
+      margin-top: 20px;
+    }
+  }
+
+  ol {
+    margin: 24px;
+  }
+
+  ol > li {
+    border-bottom: none;
+    padding: 0 0 2rem 0 !important;
+
+    label {
+      width: 100% !important;
+      margin-bottom: 5px;
+      font-weight: 500 !important;
+    }
+  }
+
+  .actions {
+    display: flex;
+    justify-content: center;
+  }
+
+  input[type='text'],
+  input[type='password'],
+  input[type='email'],
+  input[type='number'],
+  input[type='url'],
+  input[type='tel'],
+  input[type='date'],
+  textarea {
+    width: calc(100% - 24px);
+    height: 20px;
+    border: $border-style;
+    box-shadow: $field-shadow;
+    padding: 7.5px 10px;
+    font-family: $font-family;
+  }
+
+  textarea {
+    height: 200px;
+  }
+
+  input[type='file'] {
+    width: calc(100% - 14px);
+    margin-left: 0;
+    border: $border-style;
+    border-radius: 4px;
+    box-shadow: $field-shadow;
+    padding: 7.5px 5px;
+    font-family: $font-family;
+  }
+
+  select {
+    width: calc(100% - 2px);
+    margin-left: 0;
+    border: $border-style;
+    border-radius: 4px;
+    box-shadow: $field-shadow;
+    padding: 7.5px 5px;
+    font-family: $font-family;
+  }
+
+  input[type='checkbox'] {
+    background: $bg-light;
+    border: $border-style;
+    border-radius: 2px;
+    cursor: pointer;
+    height: 14px;
+    outline: unset;
+    position: relative;
+    transition: unset;
+    width: 14px;
+    vertical-align: middle;
+
+    &:after {
+      background: unset;
+      border: unset;
+      box-shadow: unset;
+      border-radius: unset;
+      height: unset;
+      left: unset;
+      right: unset;
+      top: unset;
+      transition: unset;
+    }
+
+    &:checked {
+      border: unset;
+      box-shadow: inset 0 0 0 14px $secondary;
+      padding: unset;
+      transition: unset;
+
+      &:after {
+        border-color: unset;
+        left: 1.5px;
+        right: unset;
+        transition: unset;
+        content: '\2714';
+        color: $text-white;
+      }
+    }
+  }
+}
+
+.tabs .ui-tabs-panel > fieldset.inputs {
+  border-radius: $global-border-radius;
+}
+
+/* FILTER FORM */
+form.filter_form {
+  .filter_form_field {
+    padding: 24px 0 0 0;
+    margin: auto;
+    margin-top: 24px;
+    border-top: $border-style-light;
+    width: 90%;
+
+    &:first-child {
+      padding: 0;
+      border-top: none;
+    }
+  }
+
+  .filter_form_field + .filter_form_field {
+    border-top: $border-style-light;
+  }
+}
+
+.filter_form_field.select_and_search
+input[type='text'] {
+  width: calc(50% - 7px);
+  height: 20px;
+}
+
+.filter_form_field.filter_date_range
+input[type=text] {
+  max-width: 112px !important;
+}
+
+.filter_form {
+  .select_and_search {
+    span {
+      display: none;
+    }
+  }
+
+  .filter_form_field.filter_date_range input[type='text'] {
+    height: 37px;
+  }
+}
+
+/* SIDEBAR FORM */
+.sidebar_section {
+  input[type='text'] {
+    height: 20px;
+  }
+}
+
+/* ACTIVE ADMIN ADDONS CLASSES FORM */
+.inputs .select2-container {
+  width: 100% !important;
+}
+
+.select2-container--default
+.select2-selection--single {
+  border: $border-style;
+}
+
+.select2-container
+.select2-selection--single {
+  height: 37px;
+  box-shadow: $field-shadow;
+}
+
+.select2-container--default
+.select2-selection--single
+.select2-selection__arrow {
+  height: 36px;
+}
