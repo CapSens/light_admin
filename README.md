@@ -7,7 +7,7 @@ ActiveadminThemeCapsens is a minimal theme for ActiveAdmin.
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'active_admin_theme_capsens', github: agosha-wra/activeadmin-theme-capsens
+gem 'active_admin_theme_capsens', github: 'agosha-wra/activeadmin-theme-capsens'
 ```
 
 And then execute:
