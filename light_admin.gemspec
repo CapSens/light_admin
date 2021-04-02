@@ -3,7 +3,7 @@ require_relative 'lib/light_admin/version'
 Gem::Specification.new do |spec|
   spec.name          = "light_admin"
   spec.version       = LightAdmin::VERSION
-  spec.authors       = ["CapSens"]
+  spec.authors       = ["Marie Ishihara", "Antoine Goeuriot", "CapSens"]
 
   spec.summary       = 'Simple, minimal theme for activeadmin.'
   spec.description   = 'At CapSens - Paris-based RoR agency - we like ActiveAdmin very much. So we built this theme for it.'

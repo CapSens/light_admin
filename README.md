@@ -1,31 +1,106 @@
-# ActiveAdminThemeCapsens
+# light_admin - A minimal theme for ActiveAdmin
 
-ActiveadminThemeCapsens is a minimal theme for ActiveAdmin. 
+![Screenshot](doc/index.png)
+![Screenshot](doc/show.png)
+
+Design by Marie Ishihara
+Gem by CapSens
 
 ## Installation
 
-Add this line to your application's Gemfile:
-
+- Add this line to your application's Gemfile:
 ```ruby
-gem 'active_admin_theme_capsens', github: 'agosha-wra/activeadmin-theme-capsens'
+gem 'light_admin', github: 'agosha-wra/light_admin'
 ```
 
-And then execute:
+- And then run:
+```
+$ bundle install
+```
 
-    $ bundle install
+## Pre-requisites
+- This gem requires the activeadmin gem.  
+- This gem requires bootstrap: 
+```
+$ yarn add bootstrap@4.6.0
+```
 
-## Usage
+## Set-up
+- In `app/assets/javascripts/active_admin`, add the line: 
+```
+//= require capsens_theme/filters_toggle
+```
+- In `app/assets/stylesheets`, add the line:
+```
+@import 'light_admin/base';
+```
+- Your `active_admin.scss` file should look like this: <br>
+```
+@import 'active_admin/mixins';
+@import 'active_admin/base';
+@import 'light_admin/base';
+``` 
+You are good to go !
 
-Add  
-'@import "capsens_theme/base";'  
-in app/assets/stylesheets/active_admin.scss after '@import "active_admin/base".
+## Displaying a logo in the header 
+- Import the image of your logo in `app/assets/images`
+- In `config/initializers/active_admin.rb` uncomment the following line: <br>
+```
+# config.site_title_image = "logo.png"
+```
+- In place of `logo.png`, specify the name of your image and its extension: <br>
+```
+config.site_title_image = "name_of_your_image.png"
+```
+> Restart your Rails server so the changes take effect. 
 
-Add  
-'//= require capsens_theme/filters_toggle'  
-in app/assets/javascripts/active_admin.js after '//= require active_admin/base'  
 
-Good to go!
+## Displaying a logo on the login page
+- Place your image in `app/assets/images/devise/sessions`.
+- Run: 
+```
+$ rails generate light_admin_new_session
+```
+- Edit the commented lines in `app/views/active_admin/devise/sessions/new.html.erb`
+
+## Customizing variables 
+- By default, variables are stored within the gem. If you want to edit them: 
+```
+$ rails generate light_admin_variables
+```
+- Then you can edit the variables in the following files: <br>
+- For colors: <br>
+`app/assets/stylesheets/active_admin/variables/_colors.scss`.
+
+- For fonts: <br>
+`app/assets/stylesheets/active_admin/variables/_font.scss`.
+
+- For borders: <br>
+`app/assets/stylesheets/active_admin/variables/_borders.scss`.
+
+- For shadows: <br>
+`app/assets/stylesheets/active_admin/variables/_shadows.scss`.
+
+## Panel with link
+![Screenshot](doc/panel-with-link.png)
+`panel_with_link` behaves the same of ActiveAdmin's `panel`,  except that it can also display links. 
+- If you want to use `panel_with_link`, you only need to call the `panel_with_link` method where you need it (for example, in your show page) and define its attributes like usual with ActiveAdmin.
+
+- Here is the code for the above screenshot:
+```
+panel_with_link t('users'), 'Voir tous', admin_users_path do
+  table_for user do
+    column :id
+    column :email do
+      link_to user.email, admin_user_path
+    end 
+    column :created_at
+    column :updated_at
+    column :first_name
+    column :last_name
+  end
+end
+```
 
 ## License
-
 The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
