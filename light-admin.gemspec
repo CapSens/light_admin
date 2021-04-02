@@ -1,12 +1,12 @@
-require_relative 'lib/active_admin_theme_capsens/version'
+require_relative 'lib/light_admin/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "active_admin_theme_capsens"
-  spec.version       = ActiveAdminThemeCapsens::VERSION
+  spec.name          = "light_admin"
+  spec.version       = LightAdmin::VERSION
   spec.authors       = ["CapSens"]
 
   spec.summary       = 'Simple, minimal theme for activeadmin.'
-  spec.description   = 'Simple, minimal theme for activeadmin.'
+  spec.description   = 'At CapSens - Paris-based RoR agency - we like ActiveAdmin very much. So we built this theme for it.'
   spec.license       = "MIT"
 
   spec.files = Dir.chdir(File.expand_path(__dir__)) do
