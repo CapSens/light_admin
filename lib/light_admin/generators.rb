@@ -13,7 +13,7 @@ module LightAdmin
     source_root File.expand_path('../../', __dir__)
 
     def add_new
-      template 'views/active_admin/devise/sessions/new.html.erb', 'views/active_admin/devise/sessions/new.html.erb'
+      directory 'app/views/active_admin/devise/sessions/', 'app/views/active_admin/devise/sessions'
     end
   end
 end
