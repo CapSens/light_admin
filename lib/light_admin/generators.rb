@@ -5,7 +5,7 @@ module LightAdmin
     source_root File.expand_path('../../app/assets/stylesheets/light_admin', __dir__)
 
     def add_variables
-      directory "variables", "app/assets/stylesheets/light_admin/variables"
+      directory "variables", "app/assets/stylesheets/light_admin/custom_variables"
     end
   end
 

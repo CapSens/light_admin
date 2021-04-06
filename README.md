@@ -18,6 +18,8 @@ gem 'light_admin', github: 'agosha-wra/light_admin'
 $ bundle install
 ```
 
+- Make sure you have no other ActiveAdmin them installed before installing this gem!
+
 ## Pre-requisites
 - This gem requires the activeadmin gem.  
 - This gem requires bootstrap: 
@@ -59,27 +61,28 @@ config.site_title_image = "name_of_your_image.png"
 - Place your image in `app/assets/images/devise/sessions`.
 - Run: 
 ```
-$ rails generate light_admin_new_session
+$ rails generate light_admin:new_session
 ```
 - Edit the commented lines in `app/views/active_admin/devise/sessions/new.html.erb`
 
 ## Customizing variables 
 - By default, variables are stored within the gem. If you want to edit them: 
 ```
-$ rails generate light_admin_variables
+$ rails generate light_admin:variables
 ```
 - Then you can edit the variables in the following files: <br>
-- For colors: <br>
-`app/assets/stylesheets/active_admin/variables/_colors.scss`.
+`app/assets/stylesheets/light_admin/custom_variables/_colors.scss`.
+`app/assets/stylesheets/light_admin/custom_variables/_font.scss`.
+`app/assets/stylesheets/light_admin/custom_variables/_borders.scss`.
+`app/assets/stylesheets/light_admin/custom_variables/_shadows.scss`.
 
-- For fonts: <br>
-`app/assets/stylesheets/active_admin/variables/_font.scss`.
-
-- For borders: <br>
-`app/assets/stylesheets/active_admin/variables/_borders.scss`.
-
-- For shadows: <br>
-`app/assets/stylesheets/active_admin/variables/_shadows.scss`.
+Then, import your changed variables in `app/assets/stylesheets/active_admin.scss` above the light admin base scss file, it should look like this if you have changed only colors:
+```
+@import 'active_admin/mixins';
+@import 'active_admin/base';
+@import 'light_admin/custom_variables/colors';
+@import 'light_admin/base';
+``` 
 
 ## Panel with link
 ![Screenshot](doc/panel-with-link.png)

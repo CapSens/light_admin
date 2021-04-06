@@ -1,14 +1,14 @@
 /* BORDER RADIUS */
-$global-border-radius: 10px;
-$border-radius-btn: .375rem;
-$border-radius-left: .375rem 0 0 .375rem;
-$border-radius-right: 0 .375rem .375rem 0;
-$global-border-radius-top: 10px 10px 0 0;
-$global-border-radius-bottom: 0 0 10px 10px;
-$border-radius-scope: 0.375rem;
-$border-radius-thumbnail: 50%;
+$global-border-radius: 10px !default;
+$border-radius-btn: .375rem !default;
+$border-radius-left: .375rem 0 0 .375rem !default;
+$border-radius-right: 0 .375rem .375rem 0 !default;
+$global-border-radius-top: 10px 10px 0 0 !default;
+$global-border-radius-bottom: 0 0 10px 10px !default;
+$border-radius-scope: 0.375rem !default;
+$border-radius-thumbnail: 50% !default;
 
 /* BORDER STYLE */
-$border-style: .5px solid $light-gray;
-$border-style-light: .5px solid $light;
-$border-style-buttons: 0.5px solid rgba($charcoal, .3);
+$border-style: .5px solid $light-gray !default;
+$border-style-light: .5px solid $light !default;
+$border-style-buttons: 0.5px solid rgba($charcoal, .3) !default;

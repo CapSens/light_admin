@@ -1,32 +1,32 @@
 /* COLORS LIST */
-$black: #000000;
-$white: #FFFFFF;
-$white-20: rgba($white, .2);
-$gray: #4B5563;
-$light-gray: #D9D7DD;
-$charcoal: #374151;
-$primary: #0c81e4;
-$secondary: #0c4e8c;
-$info: #11c4d4;
-$light: #F3F4F6;
-$dark: #526469;
-$success: #66bb6a;
-$danger: #bb4678;
+$black: #000000 !default;
+$white: #FFFFFF !default;
+$white-20: rgba($white, .2) !default;
+$gray: #4B5563 !default;
+$light-gray: #D9D7DD !default;
+$charcoal: #374151 !default;
+$primary: #0c81e4 !default;
+$secondary: #0c4e8c !default;
+$info: #11c4d4 !default;
+$light: #F3F4F6 !default;
+$dark: #526469 !default;
+$success: #66bb6a !default;
+$danger: #bb4678 !default;
 
 /* BACKGROUNDS COLOR */
-$bg-white: $white;
-$bg-buttons: $charcoal;
-$bg-light: $light;
-$bg-danger: $danger;
+$bg-white: $white !default;
+$bg-buttons: $charcoal !default;
+$bg-light: $light !default;
+$bg-danger: $danger !default;
 
 /* FONTS COLOR */
-$global-text-color: $gray;
-$text-white: $white;
-$header-item-li-color: rgba($white, 0.8);
-$text-info: $info;
-$text-dark: $dark;
-$text-success: $success;
-$text-danger: $danger;
-$title-login: $black;
-$text-buttons: $charcoal;
-$attributes-table-th-text-color: rgba($gray, .7);
+$global-text-color: $gray !default;
+$text-white: $white !default;
+$header-item-li-color: rgba($white, 0.8) !default;
+$text-info: $info !default;
+$text-dark: $dark !default;
+$text-success: $success !default;
+$text-danger: $danger !default;
+$title-login: $black !default;
+$text-buttons: $charcoal !default;
+$attributes-table-th-text-color: rgba($gray, .7) !default;
