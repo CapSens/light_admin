@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    light_admin (1.0.4)
+    light_admin (1.0.5)
       activeadmin (>= 1.1.0, < 3.0)
 
 GEM

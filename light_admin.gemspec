@@ -6,7 +6,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Marie Ishihara", "Antoine Goeuriot", "CapSens"]
 
   spec.summary       = 'Simple, minimal theme for activeadmin.'
-  spec.description   = 'At CapSens - Paris-based RoR agency - we like ActiveAdmin very much. So we built this theme for it.'
+  spec.description   = 'At CapSens - Paris-based RoR agency - we like ActiveAdmin very much. So we made this theme.'
   spec.license       = "MIT"
 
   spec.files = Dir.chdir(File.expand_path(__dir__)) do

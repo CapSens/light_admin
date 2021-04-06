@@ -6,16 +6,17 @@ body {
 
   #active_admin_content {
     padding: 0 15px;
-  }
 
-  #active_admin_content #main_content_wrapper #main_content {
-    margin-top: 30px;
-    width: calc(100vw - 30px);
+    #main_content_wrapper {
+      #main_content {
+        margin-top: 30px;
 
-    .paginated_collection {
-      background: $bg-white;
-      border-radius: $global-border-radius;
-      overflow: auto;
+        .paginated_collection {
+          background: $bg-white;
+          border-radius: $global-border-radius;
+          overflow: auto;
+        }
+      }
     }
   }
 
@@ -39,5 +40,11 @@ body {
     background: $bg-white;
     border-top: $border-style-light;
     border-radius: $global-border-radius-bottom;
+  }
+}
+
+.index {
+  #wrapper {
+    display: unset;
   }
 }

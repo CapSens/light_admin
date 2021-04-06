@@ -19,10 +19,10 @@ ActiveAdmin::Views::Header.class_eval do
         insert_tag view_factory.global_navigation, @utility_menu, id: 'utility_nav', class: 'header-item tabs'
       end
 
-      div class: 'border-bottom-white-50 pt-1 mx-4' do
+      div class: 'border-bottom-white-50 mx-4' do
       end
 
-      div class: 'p-4' do
+      div class: 'px-4 py-2' do
         insert_tag view_factory.global_navigation, @menu, class: 'header-item tabs'
       end
     end
