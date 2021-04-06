@@ -71,10 +71,10 @@ $ rails generate light_admin:new_session
 $ rails generate light_admin:variables
 ```
 - Then you can edit the variables in the following files: <br>
-`app/assets/stylesheets/light_admin/custom_variables/_colors.scss`.
-`app/assets/stylesheets/light_admin/custom_variables/_font.scss`.
-`app/assets/stylesheets/light_admin/custom_variables/_borders.scss`.
-`app/assets/stylesheets/light_admin/custom_variables/_shadows.scss`.
+`app/assets/stylesheets/light_admin/custom_variables/_colors.scss`.  
+`app/assets/stylesheets/light_admin/custom_variables/_font.scss`.  
+`app/assets/stylesheets/light_admin/custom_variables/_borders.scss`.  
+`app/assets/stylesheets/light_admin/custom_variables/_shadows.scss`.  
 
 Then, import your changed variables in `app/assets/stylesheets/active_admin.scss` above the light admin base scss file, it should look like this if you have changed only colors:
 ```
