@@ -76,7 +76,7 @@ $ rails generate light_admin:variables
 `app/assets/stylesheets/light_admin/custom_variables/_borders.scss`  
 `app/assets/stylesheets/light_admin/custom_variables/_shadows.scss`  
 
-Then, import your changed variables in `app/assets/stylesheets/active_admin.scss` above the light admin base scss file, it should look like this if you have changed only colors:
+- Then, import your changed variables in `app/assets/stylesheets/active_admin.scss` above the light admin base scss file, it should look like this if you have changed only colors:
 ```
 @import 'active_admin/mixins';
 @import 'active_admin/base';
