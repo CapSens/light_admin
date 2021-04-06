@@ -3,7 +3,7 @@
 ![Screenshot](doc/index.png)
 ![Screenshot](doc/show.png)
 
-Design by Marie Ishihara
+Design by Marie Ishihara  
 Gem by CapSens
 
 ## Installation
