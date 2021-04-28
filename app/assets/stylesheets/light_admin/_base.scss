@@ -5,12 +5,9 @@
 @import 'variables/shadows';
 
 // Required Bootstrap
-@import 'bootstrap/scss/functions';
-@import 'bootstrap/scss/variables';
-@import 'bootstrap/scss/mixins';
-
-@import 'bootstrap/scss/images';
-@import 'bootstrap/scss/utilities';
+@import '../bootstrap/flex';
+@import '../bootstrap/spacing';
+@import '../bootstrap/sizing';
 
 // Components
 @import 'components/toggle_filters';
