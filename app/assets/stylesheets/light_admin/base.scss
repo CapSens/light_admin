@@ -4,10 +4,10 @@
 @import 'variables/borders';
 @import 'variables/shadows';
 
-// Required Bootstrap
-@import '../bootstrap/flex';
-@import '../bootstrap/spacing';
-@import '../bootstrap/sizing';
+// Utilities
+@import '../utilities/flex';
+@import '../utilities/spacing';
+@import '../utilities/sizing';
 
 // Components
 @import 'components/toggle_filters';
