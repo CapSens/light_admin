@@ -22,10 +22,6 @@ $ bundle install
 
 ## Pre-requisites
 - This gem requires the activeadmin gem.  
-- This gem requires bootstrap: 
-```
-$ yarn add bootstrap@4.6.0
-```
 
 ## Set-up
 - In `app/assets/javascripts/active_admin`, add the line: 
