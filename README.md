@@ -101,5 +101,22 @@ panel_with_link t('users'), 'Voir tous', admin_users_path do
 end
 ```
 
+## Contributing
+
+Bug reports and pull requests are welcome on GitHub at https://github.com/CapSens/light_admin
+
+1. **Fork** the repo on GitHub
+2. **Clone** the project to your own machine
+3. **Commit** changes to your own branch
+4. **Push** your work back up to your fork
+5. Submit a **Pull request** so that we can review your changes
+
+NOTE: Be sure to merge the latest from "upstream" before making a pull request!
+
 ## License
+
 The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
+
+## Code of Conduct
+
+Everyone interacting in the LightAdmin project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/Capsens/light_admin/blob/master/CODE_OF_CONDUCT.md).
