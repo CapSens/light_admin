@@ -342,7 +342,6 @@ form.filter_form {
 }
 
 /* BUTTONS FOR ADD AND ERASED DOCUMENTS */
-
 a.button, a:link.button {
   background: $bg-white;
   border: $border-style-buttons;
@@ -350,8 +349,10 @@ a.button, a:link.button {
   box-shadow: $buttons-shadow;
   font-size: $font-size;
   font-weight: 500;
+  text-shadow: none;
+  color: $text-buttons;
+}
 
-  &:hover {
-    background: $bg-light;
-  }
+a.button:not(.disabled):hover, a:link.button:not(.disabled):hover {
+  background: $bg-light;
 }

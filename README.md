@@ -26,7 +26,7 @@ $ bundle install
 ## Set-up
 - In `app/assets/javascripts/active_admin`, add the line: 
 ```
-//= require capsens_theme/filters_toggle
+//= require light_admin/filters_toggle
 ```
 - In `app/assets/stylesheets`, add the line:
 ```
