@@ -7,10 +7,12 @@
   font-family: $font-family;
   font-size: 1.875rem;
   font-weight: bold;
+  line-height: initial;
   text-align: center;
   color: $title-login;
   padding: 0;
   margin-top: 1.5rem;
+  padding: 0 30px;
 }
 
 /* LOGIN FORM */

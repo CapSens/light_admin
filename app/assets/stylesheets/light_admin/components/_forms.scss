@@ -3,6 +3,14 @@ form {
   fieldset {
     legend {
       span {
+        background: none;
+        border: none;
+        box-shadow: none;
+        color: inherit;
+        padding: 0 24px;
+        position: relative;
+        top: 30px;
+        
         &:empty {
           display: none;
         }
@@ -135,45 +143,72 @@ form {
 }
 
 /* FILTER FORM */
-form.filter_form {
-  .filter_form_field {
-    padding: 24px 0 0 0;
-    margin: auto;
-    margin-top: 24px;
-    border-top: $border-style-light;
-    width: 90%;
+#filters_sidebar_section {
+  .sidebar_section
+  input[type=text] {
+    width: inherit;
+  }
 
-    &:first-child {
-      padding: 0;
-      border-top: none;
+  .select2-container
+  .select2-selection--single {
+    width: 235px;
+  }
+  
+  .select2-container--default .select2-selection--single
+  .select2-selection__arrow {
+    right: -38px;
+  }
+
+  .select2-container--open
+  .select2-dropdown--below {
+    width: 235px !important;
+  }
+
+  form.filter_form {
+    .filter_form_field {
+      padding: 24px 0 0 0;
+      margin: auto;
+      margin-top: 24px;
+      border-top: $border-style-light;
+      width: 90%;
+  
+      &:first-child {
+        padding: 0;
+        border-top: none;
+      }
+    }
+
+    .filter_form_field.select_and_search input[type=text] {
+      margin-left: 0;
+      width: inherit;
+    }
+  
+    .filter_form_field + .filter_form_field {
+      border-top: $border-style-light;
     }
   }
-
-  .filter_form_field + .filter_form_field {
-    border-top: $border-style-light;
+  
+  .filter_form_field.select_and_search
+  input[type='text'] {
+    width: calc(50% - 7px);
+    height: 20px;
   }
-}
-
-.filter_form_field.select_and_search
-input[type='text'] {
-  width: calc(50% - 7px);
-  height: 20px;
-}
-
-.filter_form_field.filter_date_range
-input[type=text] {
-  max-width: 112px !important;
-}
-
-.filter_form {
-  .select_and_search {
-    span {
-      display: none;
+  
+  .filter_form_field.filter_date_range
+  input[type=text] {
+    max-width: 112px !important;
+  }
+  
+  .filter_form {
+    .select_and_search {
+      span {
+        display: none;
+      }
     }
-  }
-
-  .filter_form_field.filter_date_range input[type='text'] {
-    height: 37px;
+  
+    .filter_form_field.filter_date_range input[type='text'] {
+      height: 37px;
+    }
   }
 }
 
