@@ -42,7 +42,7 @@ form {
 
   ol > li {
     border-bottom: none;
-    padding: 0 0 2rem 0 !important;
+    padding: 0 0 .5rem 0 !important;
 
     label {
       width: 100% !important;
@@ -127,12 +127,15 @@ form {
       transition: unset;
 
       &:after {
-        border-color: unset;
-        left: 1.5px;
-        right: unset;
+        position: absolute;
+        border: solide $white;
+        border-width: 0 2px 2px 0;
+        height: 8px;
+        width: 2px;
+        left: 5px;
+        bottom: 3px;
         transition: unset;
-        content: '\2714';
-        color: $text-white;
+        transform: rotate(45deg);
       }
     }
   }
@@ -179,8 +182,7 @@ form {
     }
 
     .filter_form_field.select_and_search input[type=text] {
-      margin-left: 0;
-      width: inherit;
+      margin-left: 10px;
     }
   
     .filter_form_field + .filter_form_field {
@@ -190,7 +192,7 @@ form {
   
   .filter_form_field.select_and_search
   input[type='text'] {
-    width: calc(50% - 7px);
+    width: calc(50% - 22px);
     height: 20px;
   }
   

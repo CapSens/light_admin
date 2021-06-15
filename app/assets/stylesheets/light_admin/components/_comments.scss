@@ -32,6 +32,19 @@
       margin-bottom: 24px;
     }
   }
+
+  .comments {
+    .empty {
+      position: relative;
+      padding: 1.5rem;
+      top: 1.25rem;
+      font-weight: bold;
+    }
+
+    .active_admin_comment {
+      max-width: 100%;
+    }
+  }
 }
 
 div.active_admin_comment {
