@@ -1,7 +1,7 @@
 $(document).ready(function () {
   $('#active_admin_content .table_tools').append('<a id="toggleFilters" href="#" class=\'epon\'>Filtres</a>');
 
-  if (!window.location.search.includes('Filter')) {
+  if (!window.location.search.includes('Filter') && $('body').hasClass('index')) {
     $('div#sidebar').hide();
     $('#main_content').css({ 'margin-right': '0px' });
     $('a#toggleFilters').removeClass('epon');
