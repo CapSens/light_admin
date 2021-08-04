@@ -6,6 +6,12 @@
   label {
     margin-bottom: 5px;
   }
+
+  .attributes_table {
+    th { 
+      min-width: 0 
+    }
+  }
 }
 
 /* FILTER STATUS LIST STYLE */
