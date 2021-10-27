@@ -10,7 +10,7 @@ Gem by CapSens
 
 - Add this line to your application's Gemfile:
 ```ruby
-gem 'light_admin', git: 'git@github.com:CapSens/light_admin.git'
+gem 'light_admin'
 ```
 
 - And then run:
