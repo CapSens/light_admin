@@ -1,0 +1,13 @@
+version: 2
+jobs:
+  build:
+    working_directory: ~/light_admin
+    docker:
+      - image: capsens/ruby-node-yarn:2.7.1
+    steps:
+      - checkout
+      - run:
+          name: "Audit Securité du Gemfile"
+          command: |
+            gem install bundler-audit
+            bundle audit --update
