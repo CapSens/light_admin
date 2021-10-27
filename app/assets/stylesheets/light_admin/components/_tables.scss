@@ -108,7 +108,7 @@ table.index_table {
 .attributes_table {
   border-radius: $global-border-radius;
   box-shadow: $global-shadow;
-  overflow: scroll;
+  overflow: auto;
 
   table {
     tr {
