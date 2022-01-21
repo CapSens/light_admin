@@ -4,6 +4,10 @@ body {
   color: $global-text-color;
   background-color: $bg-light;
 
+  *, *::before, *::after {
+    box-sizing: unset;
+  }
+
   #active_admin_content {
     padding: 0 15px;
 
