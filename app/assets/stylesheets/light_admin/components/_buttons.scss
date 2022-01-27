@@ -205,6 +205,7 @@ a.table_tools_button, .table_tools .dropdown_menu_button {
     justify-content: center;
     margin: 25px 0 25px 0;
     list-style: none;
+    flex-wrap: wrap;
 
     li {
       padding: 1rem;
