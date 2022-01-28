@@ -1,6 +1,14 @@
 .ui-datepicker {
   box-shadow: $dropdown-shadow;
-  left: 1192px !important;
+
+  .ui-datepicker-header {
+    height: auto;
+    width: 10.938rem;
+  }
+
+  table.ui-datepicker-calendar {
+    width: 10.938rem;
+  }
 }
 
 .ui-datepicker-calendar {
