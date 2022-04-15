@@ -18,17 +18,18 @@ gem 'light_admin'
 $ bundle install
 ```
 
-- Make sure you have no other ActiveAdmin them installed before installing this gem!
+- Make sure you have no other ActiveAdmin theme installed before installing this gem!
+*(exhaustive list of themes you may have : https://github.com/paladini/activeadmin-themes, if you have some, don't forget to remove associated @import too)*
 
 ## Pre-requisites
 - This gem requires the activeadmin gem.  
 
 ## Set-up
-- In `app/assets/javascripts/active_admin`, add the line: 
+- In `app/assets/javascripts/active_admin.js`, add the line: 
 ```
 //= require light_admin/filters_toggle
 ```
-- In `app/assets/stylesheets`, add the line:
+- In `app/assets/stylesheets/active_admin.scss`, add the line:
 ```
 @import 'light_admin/base';
 ```
