@@ -19,7 +19,7 @@ $ bundle install
 ```
 
 - Make sure you have no other ActiveAdmin theme installed before installing this gem!
-*(exhaustive list of themes you may have : https://github.com/paladini/activeadmin-themes, if you have some, don't forget to remove associated @import too)*
+*(non-exhaustive list of themes you may have : https://github.com/paladini/activeadmin-themes, if you have some, don't forget to remove associated @import too)*
 
 ## Pre-requisites
 - This gem requires the activeadmin gem.  
