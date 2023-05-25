@@ -1,6 +1,6 @@
 ActiveAdmin::Views::Header.class_eval do
   def build(namespace, menu)
-    super(id: 'header')
+    super(id: 'header', 'data-env': Rails.env)
 
     @namespace = namespace
     @menu = menu
