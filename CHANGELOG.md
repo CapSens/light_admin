@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.8
+
+* Add a green border to the header so we can now when we are in a safe environment (staging, development).
+
 ## 1.0.6
 
 * Replace some `overflow: scroll` by `auto` to avoid useless scroll bar.
