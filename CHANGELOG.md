@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.9
+
+* Correctly apply styling to action_items dropdown_menu buttons.
+
 ## 1.0.8
 
 * Add a green border to the header so we can know when we are in a safe environment (staging, development).

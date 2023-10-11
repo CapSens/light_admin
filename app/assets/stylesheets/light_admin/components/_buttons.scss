@@ -91,7 +91,7 @@
 }
 
 /* GROUPED ACTIONS BUTTON */
-a.table_tools_button, .table_tools .dropdown_menu_button {
+a.table_tools_button, .table_tools .dropdown_menu_button, #title_bar div.action_items span.action_item .dropdown_menu a.dropdown_menu_button {
   box-shadow: none;
   text-shadow: none;
   border: none;
@@ -107,7 +107,7 @@ a.table_tools_button, .table_tools .dropdown_menu_button {
   color: $text-buttons;
 }
 
-.dropdown_menu {
+.dropdown_menu, #title_bar div.action_items span.action_item .dropdown_menu {
   .dropdown_menu_button {
     &:not(.disabled) {
       &:hover {
