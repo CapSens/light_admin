@@ -15,5 +15,5 @@ Gem::Specification.new do |spec|
   spec.bindir        = "exe"
   spec.require_paths = ["lib"]
 
-  spec.add_dependency 'activeadmin', ['>= 1.1.0', '< 3.0']
+  spec.add_dependency 'activeadmin', ['>= 1.1.0', '< 4.0']
 end
