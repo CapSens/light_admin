@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.1.1
+
+* Hide `Filters` button if they are disabled.
+
+## 1.1.0
+
+* Bump activeadmin max version to < 4.0
+
 ## 1.0.9
 
 * Correctly apply styling to action_items dropdown_menu buttons.
