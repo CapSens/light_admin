@@ -14,8 +14,8 @@
   z-index: unset;
   backdrop-filter: unset;
 
-   &[data-env="development"], &[data-env="staging"] {
-    border: 10px solid $success;
+  &[data-env="development"], &[data-env="staging"] {
+    border-top: 10px solid $success;
   }
 
   h1 {

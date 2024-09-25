@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.1.2
+
+* Fix env specific border left and right.
+* fix(ui): set up inner text of filters button to be i18n key
+
 ## 1.1.1
 
 * Hide `Filters` button if they are disabled.
