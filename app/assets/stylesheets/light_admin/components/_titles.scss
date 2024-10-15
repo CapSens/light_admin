@@ -9,6 +9,11 @@
   margin-bottom: 0;
   width: calc(100% - 2rem);
   box-shadow: $global-shadow;
+  display: flex;
+  max-width: auto;
+  width: auto;
+  justify-content: space-between;
+  align-items: center;
 
   #page_title {
     color: $global-text-color;

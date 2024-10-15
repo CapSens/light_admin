@@ -20,7 +20,7 @@ table {
   table {
     tr {
       background: none;
-      transition: .3s ease;
+      transition: 0.3s ease;
 
       &:hover {
         background: $bg-light;
@@ -32,7 +32,7 @@ table {
 table.index_table {
   border: none;
   border-radius: $global-border-radius;
-  padding: 30px;
+  padding: 0px;
   box-shadow: none;
 
   thead {
@@ -68,7 +68,8 @@ table.index_table {
     }
   }
 
-  th.sorted-asc, th.sorted-desc {
+  th.sorted-asc,
+  th.sorted-desc {
     background: $bg-white;
     text-transform: uppercase;
   }
@@ -112,14 +113,15 @@ table.index_table {
 
   table {
     tr {
-      transition: .3s;
+      transition: 0.3s;
 
       &:hover {
         background: $bg-light;
       }
     }
 
-    th, td {
+    th,
+    td {
       border-bottom: $border-style-light;
       padding: 1.25rem 1rem;
     }
@@ -137,7 +139,8 @@ table.index_table {
     border-bottom: $border-style-light;
   }
 
-  th, td {
+  th,
+  td {
     padding: 1rem 1.5rem;
     border-bottom: $border-style-light;
   }
