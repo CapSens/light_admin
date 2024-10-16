@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.1.3
+
+* Fix title_bar horizontal scroll.
+
 ## 1.1.2
 
 * Fix env specific border left and right.
