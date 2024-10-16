@@ -10,7 +10,7 @@ form {
         padding: 0 24px;
         position: relative;
         top: 30px;
-        
+
         &:empty {
           display: none;
         }
@@ -42,7 +42,7 @@ form {
 
   ol > li {
     border-bottom: none;
-    padding: 0 0 .5rem 0 !important;
+    padding: 0 0 0.5rem 0 !important;
 
     label {
       width: 100% !important;
@@ -147,23 +147,21 @@ form {
 
 /* FILTER FORM */
 #filters_sidebar_section {
-  .sidebar_section
-  input[type=text] {
+  .sidebar_section input[type='text'] {
     width: inherit;
   }
 
-  .select2-container
-  .select2-selection--single {
+  .select2-container .select2-selection--single {
     width: 235px;
   }
-  
-  .select2-container--default .select2-selection--single
-  .select2-selection__arrow {
+
+  .select2-container--default
+    .select2-selection--single
+    .select2-selection__arrow {
     right: -38px;
   }
 
-  .select2-container--open
-  .select2-dropdown--below {
+  .select2-container--open .select2-dropdown--below {
     width: 235px !important;
   }
 
@@ -174,40 +172,38 @@ form {
       margin-top: 24px;
       border-top: $border-style-light;
       width: 90%;
-  
+
       &:first-child {
         padding: 0;
         border-top: none;
       }
     }
 
-    .filter_form_field.select_and_search input[type=text] {
+    .filter_form_field.select_and_search input[type='text'] {
       margin-left: 10px;
     }
-  
+
     .filter_form_field + .filter_form_field {
       border-top: $border-style-light;
     }
   }
-  
-  .filter_form_field.select_and_search
-  input[type='text'] {
-    width: calc(50% - 22px);
+
+  .filter_form_field.select_and_search input[type='text'] {
+    width: calc(50% - 33px);
     height: 20px;
   }
-  
-  .filter_form_field.filter_date_range
-  input[type=text] {
-    max-width: 112px !important;
+
+  .filter_form_field.filter_date_range input[type='text'] {
+    max-width: 92px !important;
   }
-  
+
   .filter_form {
     .select_and_search {
       span {
         display: none;
       }
     }
-  
+
     .filter_form_field.filter_date_range input[type='text'] {
       height: 37px;
     }
@@ -219,6 +215,10 @@ form {
   input[type='text'] {
     height: 20px;
   }
+
+  select {
+    width: 225px;
+  }
 }
 
 /* ACTIVE ADMIN ADDONS CLASSES FORM */
@@ -226,19 +226,17 @@ form {
   width: 100% !important;
 }
 
-.select2-container--default
-.select2-selection--single {
+.select2-container--default .select2-selection--single {
   border: $border-style;
 }
 
-.select2-container
-.select2-selection--single {
+.select2-container .select2-selection--single {
   height: 37px;
   box-shadow: $field-shadow;
 }
 
 .select2-container--default
-.select2-selection--single
-.select2-selection__arrow {
+  .select2-selection--single
+  .select2-selection__arrow {
   height: 36px;
 }

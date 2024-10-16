@@ -1,11 +1,19 @@
 /* BUTTONS IN THE TITLE BAR */
 #title_bar {
   .action_items {
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+    &::after {
+      display: none;
+    }
+
     span.action_item > a {
       background: $bg-white;
       border: $border-style-buttons;
       border-radius: $border-radius-btn;
-      padding: .5rem 1rem;
+      padding: 0.5rem 1rem;
       box-shadow: $buttons-shadow;
       text-shadow: none;
       color: $text-buttons;
@@ -13,7 +21,7 @@
       font-weight: 500;
       font-family: $font-family;
       margin-right: 15px;
-      transition: all .3s ease;
+      transition: all 0.3s ease;
 
       &:not(.disabled):hover {
         background: $bg-light;
@@ -61,7 +69,7 @@
       box-shadow: none;
       border-radius: unset;
       border-right: $border-style;
-      padding: .74rem;
+      padding: 0.74rem;
       color: $text-buttons;
       font-weight: normal;
       font-family: $font-family;
@@ -87,11 +95,16 @@
     background: $bg-buttons;
     box-shadow: none;
   }
-
 }
 
 /* GROUPED ACTIONS BUTTON */
-a.table_tools_button, .table_tools .dropdown_menu_button, #title_bar div.action_items span.action_item .dropdown_menu a.dropdown_menu_button {
+a.table_tools_button,
+.table_tools .dropdown_menu_button,
+#title_bar
+  div.action_items
+  span.action_item
+  .dropdown_menu
+  a.dropdown_menu_button {
   box-shadow: none;
   text-shadow: none;
   border: none;
@@ -100,14 +113,15 @@ a.table_tools_button, .table_tools .dropdown_menu_button, #title_bar div.action_
   font-size: $font-size;
   font-weight: 500;
   background: $bg-buttons;
-  padding: .5rem 1rem;
+  padding: 0.5rem 1rem;
 }
 
 .table_tools_segmented_control li.selected a {
   color: $text-buttons;
 }
 
-.dropdown_menu, #title_bar div.action_items span.action_item .dropdown_menu {
+.dropdown_menu,
+#title_bar div.action_items span.action_item .dropdown_menu {
   .dropdown_menu_button {
     &:not(.disabled) {
       &:hover {
@@ -260,8 +274,8 @@ a.table_tools_button, .table_tools .dropdown_menu_button, #title_bar div.action_
 }
 
 /* FORMS BUTTONS */
-form input[type=submit],
-form input[type=button],
+form input[type='submit'],
+form input[type='button'],
 form button {
   background: $bg-buttons;
   color: $text-white;
@@ -270,7 +284,7 @@ form button {
   font-size: 80%;
   text-shadow: none;
   box-shadow: none;
-  border: .5px solid $white;
+  border: 0.5px solid $white;
   border-radius: $border-radius-btn;
 
   &:not(.disabled):hover {
@@ -295,13 +309,13 @@ form {
         font-size: 80%;
         text-shadow: none;
         box-shadow: none;
-        border: .5px solid $white;
+        border: 0.5px solid $white;
         border-radius: $border-radius-btn;
 
         &:not(.disabled):hover {
           background: $bg-white;
           color: $text-danger;
-          border: .5px solid $danger;
+          border: 0.5px solid $danger;
         }
       }
     }
@@ -329,21 +343,22 @@ form.filter_form {
       font-size: 80%;
       text-shadow: none;
       box-shadow: none;
-      border: .5px solid $white;
+      border: 0.5px solid $white;
       border-radius: $border-radius-btn;
       margin-left: auto;
 
       &:not(.disabled):hover {
         background: $bg-white;
         color: $text-danger;
-        border: .5px solid $danger;
+        border: 0.5px solid $danger;
       }
     }
   }
 }
 
 /* BUTTONS FOR ADD AND ERASED DOCUMENTS */
-a.button, a:link.button {
+a.button,
+a:link.button {
   background: $bg-white;
   border: $border-style-buttons;
   border-radius: $border-radius-btn;
@@ -354,6 +369,7 @@ a.button, a:link.button {
   color: $text-buttons;
 }
 
-a.button:not(.disabled):hover, a:link.button:not(.disabled):hover {
+a.button:not(.disabled):hover,
+a:link.button:not(.disabled):hover {
   background: $bg-light;
 }

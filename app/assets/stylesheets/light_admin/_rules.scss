@@ -4,7 +4,9 @@ body {
   color: $global-text-color;
   background-color: $bg-light;
 
-  *, *::before, *::after {
+  *,
+  *::before,
+  *::after {
     box-sizing: unset;
   }
 
@@ -53,6 +55,6 @@ body {
 
 .index {
   #wrapper {
-    display: unset;
+    display: block;
   }
 }
