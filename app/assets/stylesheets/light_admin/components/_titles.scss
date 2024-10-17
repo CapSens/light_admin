@@ -24,6 +24,8 @@
 }
 
 #titlebar_left {
+  height: auto !important;
+
   .breadcrumb .breadcrumb_sep {
     color: $global-text-color;
   }
