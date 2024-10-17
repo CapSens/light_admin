@@ -1,13 +1,20 @@
 /* BUTTONS IN THE TITLE BAR */
 #title_bar {
+  &:after {
+    display: none;
+  }
+
+  #titlebar_right {
+    height: auto !important;
+  }
+
   .action_items {
     height: 100%;
     display: flex;
     align-items: center;
-
-    &::after {
-      display: none;
-    }
+    flex-wrap: wrap;
+    justify-content: end;
+    row-gap: 0.25rem;
 
     span.action_item > a {
       background: $bg-white;
