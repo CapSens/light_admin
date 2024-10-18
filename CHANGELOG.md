@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.1.4
+
+* Fix title_bar (again).
+
 ## 1.1.3
 
 * Fix title_bar horizontal scroll.
